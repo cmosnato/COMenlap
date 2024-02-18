@@ -221,19 +221,23 @@ body{
 {
     border-left: 30px solid #ffffff;
     border-right: 30px solid #ffffff;
-    padding-left: 20px;
+    padding-left: 10px;
+
 }
 .main .contentbox .Rside h3
 {
-    border-left: 4px solid #303081;
-    padding-left: 10px;
-    line-height: 1rem;
+    background-color: #686867;
+    display: inline-block;
+    /* border-left: 4px solid #303081; */
+    padding: 10px 50px 10px 10px;
+    /* line-height: 1rem; */
     font-weight: 700;
-    color:#050505;
+    color:#f4efe6;
     letter-spacing: 0.1em;
     margin-bottom: 20px;
     margin-top: 50px;
     font-size: 1.4em;
+
     
 }
 .About .box

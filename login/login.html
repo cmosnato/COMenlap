@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_8 Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('https://get.wallhere.com/photo/purple-sky-wires-1900719.jpg');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .main {
+            display: flex;
+            width: 1300px;
+            height: 750px;
+            margin: 55px auto;
+            background-color: aliceblue;
+            border-radius: 30px;
+            position: relative;
+            opacity: 0.9;
+            text-align: center;
+            border: 5px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            box-shadow: 0px 50px 50px whitesmoke;
+        }
+
+        .login-left {
+            background-color: rgb(0, 0, 0);
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .login-left img {
+            border-radius: 50%;
+            margin: 10px;
+            border: 5px solid rgb(255, 255, 255);
+        }
+
+        .login-left h2 {
+            color: whitesmoke;
+            font-size: 150%;
+            margin: 20px;
+            /* border: 5px solid rgb(255, 255, 255); */
+
+        }
+
+        .login-left h1 {
+            color: rgb(71, 3, 189);
+            font-size: 250%;
+            position: absolute;
+            top: 10%;
+            padding: 20px;
+        }
+
+        .block {
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            color: blue;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .block :hover
+        {
+            color: #000000;
+            text-decoration: none;
+        }
+        .block:active
+        {
+            color: orchid;
+            text-decoration: none;
+
+        }
+        
+        .font-checkbox {
+            color: whitesmoke;
+            font-size: 13px;
+            padding: 5px;
+
+        }
+
+        .forgetpassword {
+            color: whitesmoke;
+            font-size: 13px;
+            padding: 5px;
+            padding-top: 20px;
+            text-decoration: none;
+        }
+
+        .botton {
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background-color: blueviolet;
+            color: #000000;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .botton:hover {
+            color: rgb(74, 0, 143);
+        }
+
+        .login-right {
+            background: linear-gradient(120deg, purple, grey);
+            width: 650px;
+            height: 800px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .login-right img {
+            position: absolute;
+            top: 9%;
+        }
+
+        .login-right h1 {
+            color: rgb(0, 0, 0);
+            font-size: 250%;
+            margin-top: 5px;
+        }
+
+        .login-right p {
+            padding: 10px;
+            margin: 20px auto;
+            font-size: 85%;
+
+        }
+
+        .link {
+
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 13%;
+            /* border: 1px solid black; */
+        }
+
+        .link a {
+            color: whitesmoke;
+            font-size: 13px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="">
+        </div>
+        <div class="login-left">
+            <h1>Wellcome Back</h1>
+            <img src="https://i.pinimg.com/564x/9e/b9/a8/9eb9a8367d80a4da0e695db82e197d3f.jpg" width="150" height="150">
+            <h2>Jiraphat Ruangpanit</h2>
+            <form action="/action_page.php">
+                <input type="email" class="block" placeholder="Email..."><br>
+                <input type="password" class="block" placeholder="Password..."><br>
+                <input type="submit" Class="botton" value="Login"><br><br>
+                <input type="checkbox" Class="checkbox" name="rememberuser" value="Remember me ?">
+                <label class="font-checkbox" for="checkbox">Remember me ?</label>
+                <a class="forgetpassword"
+                    href="https://www.google.com/webhp?hl=th&sa=X&ved=0ahUKEwjS9_uWzqeEAxVGXmwGHbByDc8QPAgJ"
+                    target="_blank">Forget password ?</a>
+
+            </form>
+        </div>
+        <div class="login-right">
+            <img src="pngegg.png" width="200" height="200">
+            <h1> CMOS boradgame</h1>
+            <p>If you try to playing this game ,you will be happy</p>
+            <div class="link">
+                <a href="https://www.google.com/webhp?hl=th&sa=X&ved=0ahUKEwjS9_uWzqeEAxVGXmwGHbByDc8QPAgJ"
+                    target="_blank">How to play</a>
+                <a href="https://www.google.com/webhp?hl=th&sa=X&ved=0ahUKEwjS9_uWzqeEAxVGXmwGHbByDc8QPAgJ"
+                    target="_blank">About fot this game</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

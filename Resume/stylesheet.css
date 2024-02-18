@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+    box-shadow: 0 50px 100px rgba(224, 222, 222, 0.3);
+    
+}
+.main .top{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    background: #252525;
+    border-left: 50px solid #252525;
+    border-right: 50px solid #252525;
+}
+.main .Lside{
+    border-left: 30px solid #817f7e;
+    border-right: 30px solid #817f7e;
+    background-color: #817f7e;
+}
+.main .top .imgbox
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.main .top .imgbox .box{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* margin-left: 20px; */
+    aspect-ratio: 1;
+    border: 5px solid #ffffff;
+}
+.main .top .imgbox .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+}
+.main .top .profileText
+{
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    color: #ffffff;
+}
+.main .top .profileText h3
+{
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+.main .top .profileText h3 span
+{
+    position: relative;
+    font-size: 0.5em;
+    font-weight: 500;
+    top: -8px;
+}
+.main .contentbox ul.information li
+{    
+    margin: 25px auto;
+}
+.main .contentbox ul.information li .text1
+{
+    color: #000000;
+    font-weight: 600;
+    font-size: 17px;
+}
+.main .contentbox ul.information li .text
+{
+    color: #111111;
+    font-size: 15px;
+    font-weight: 500;
+}
+.main .contentbox
+{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 ;
+}
+.main .contentbox .Lside h3
+{
+    border-bottom: 4px solid #3d3b3c;
+    /* padding-left: 10px; */
+    line-height: 1rem;
+    font-weight: 600;
+    color:#050505;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    
+}
+.main .contentbox ul{
+    position: relative;
+    margin: 10px 0;
+}
+.main .contentbox ul li
+{
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+
+}
+.main .contentbox ul li ion-icon
+{
+    font-size: 1.2em;
+    margin-right: 9px;
+    color: rgb(0, 0, 0);
+}
+.main .contentbox ul.education li
+{
+    flex-direction: column;
+    margin: 25px auto;
+}
+.main .contentbox ul.education li h5{
+    color: #333333;
+}
+.main .contentbox ul.education li h4{
+    color: #050505;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.main .contentbox ul.education li h6{
+    color: #050505;
+    font-weight: 300;
+    font-size: 1em;
+}
+.skill .box
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.skill .box h4
+{
+    color: black;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+ .skill .box .percent
+{
+    position: relative;
+    width: 80%;
+    background: rgb(134, 131, 131);
+    height: 10px;
+    margin-bottom: 15px;
+}
+.skill .percent div 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:  #162a2c;
+} 
+.main .contentbox ul.interest
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main .contentbox ul.interest li
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+.main .contentbox ul.interest li .icon
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 25%;
+    display: grid;
+    align-items: center;
+}
+.main .contentbox ul.interest li .icon ion-icon
+{
+    color: #ffffff;
+    margin:0 auto;
+}
+ .main .Rside
+{
+    border-left: 30px solid #ffffff;
+    border-right: 30px solid #ffffff;
+    padding-left: 20px;
+}
+.main .contentbox .Rside h3
+{
+    border-left: 4px solid #303081;
+    padding-left: 10px;
+    line-height: 1rem;
+    font-weight: 700;
+    color:#050505;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 1.4em;
+    
+}
+.About .box
+{
+    /* display: flex; */
+    flex-direction: row;
+    margin: 20px 0;
+}
+.About .box .year_box
+{
+    min-width: 130px;
+}
+.About .box .year_box h5
+{
+    color: #050505;
+    font-weight: 600;
+}
+.About .box .year_box .year
+{
+    color: #5f5b6b;
+}
+.About .box .year_box h4
+{
+    color: #4A5B6A;
+    font-size: 1em;
+    margin-top: 3px ;
+    margin-bottom: 10px;
+}
+.About .Profile-box .Bigfont{
+    font-weight: 600;
+    color: #323031;
+}
+
+
